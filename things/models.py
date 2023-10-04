@@ -7,5 +7,5 @@ class Thing(models.Model):
     quantity = models.PositiveIntegerField(default=1,
         validators=[
             MaxValueValidator(100),
-            MinValueValidator(1)
+            MinValueValidator(0)
         ])
